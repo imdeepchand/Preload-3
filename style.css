@@ -141,3 +141,12 @@
         top: 180px;
     }
 }
+
+@media (max-height: 680px) {
+    .line {
+        top: 220px;
+    }
+    .center {
+        top: 220px;
+    }
+}
