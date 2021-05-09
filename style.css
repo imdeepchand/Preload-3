@@ -144,9 +144,7 @@
 
 @media (max-height: 780px) {
     .line {
-        top: 240px;
+        height: 200px;
     }
-    .center {
-        top: 240px;
-    }
+   
 }
