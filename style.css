@@ -142,8 +142,8 @@
     }
 }
 
-@media (max-height: 851px) {
+@media (max-width: 393px) {
     .line {
-        height: 230px;
+        height: 190px;
     }
 }
