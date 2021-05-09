@@ -142,7 +142,7 @@
     }
 }
 
-@media (max-height: 680px) {
+@media (max-height: 780px) {
     .line {
         top: 220px;
     }
