@@ -13,7 +13,18 @@
     background-color: #cabdbd;
 }
 
+.main {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .square {
+    position: absolute;
+    bottom: 0;
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -31,14 +42,14 @@
 
 @keyframes change-l {
     0% {
-        transform: rotate(10deg) translateX(-10px);
+        transform: rotate(10deg) translateX(-20px);
     }
     50% {
-        transform: rotate(25deg) translateX(-20px);
+        transform: rotate(15deg) translateX(-40px);
         background-color: #2e2be2;
     }
     75% {
-        transform: rotate(35deg) translateX(-30px);
+        transform: rotate(20deg) translateX(-60px);
         background-color: #2e2be2;
     }
     100% {
@@ -55,14 +66,14 @@
 
 @keyframes change-r {
     0% {
-        transform: rotate(-10deg) translateX(10px);
+        transform: rotate(-10deg) translateX(20px);
     }
     50% {
-        transform: rotate(-25deg) translateX(20px);
+        transform: rotate(-15deg) translateX(40px);
         background-color: #f80a0a;
     }
     75% {
-        transform: rotate(-35deg) translateX(30px);
+        transform: rotate(-20deg) translateX(60px);
         background-color: #f80a0a;
     }
     100% {
@@ -73,10 +84,10 @@
 
 .line {
     width: 1px;
-    height: 150px;
+    height: 170px;
     background-color: #000;
     position: absolute;
-    top: 200px;
+    top: 0;
     transform-origin: top;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.45), 0 5px 15px rgba(0, 0, 0, 0.25);
 }
@@ -92,17 +103,17 @@
         transform: rotate(20deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-5deg);
     }
 }
 
 .l-1 {
-    transform: rotate(0deg);
+    transform: rotate(-5deg);
     animation: rotate-l 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .l-2 {
-    transform: rotate(0deg);
+    transform: rotate(5deg);
     animation: rotate-r 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -117,7 +128,7 @@
         transform: rotate(-20deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(5deg);
     }
 }
 
@@ -127,23 +138,8 @@
     background-color: crimson;
     border-radius: 50%;
     position: absolute;
-    top: 200px;
+    top: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.45), 0 5px 15px rgba(0, 0, 0, 0.25);
     z-index: 1;
     border: 1px solid #fff;
-}
-
-@media (max-width: 480px) {
-    .line {
-        top: 180px;
-    }
-    .center {
-        top: 180px;
-    }
-}
-
-@media (max-width: 393px) {
-    .line {
-        height: 190px;
-    }
 }
